@@ -81,3 +81,73 @@ C002	Escalada
 C002	Pilates
 
 Esto se puede importar a una tabla intermedia en SQL para modelar relaciones muchos a muchos.
+Cómo Despivotear Tablas en Excel
+Este proyecto/documentación explica las distintas formas para despivotear (rotar o transponer) tablas en Microsoft Excel. Esto es útil cuando quieres convertir datos organizados en columnas a un formato en filas, o viceversa.
+
+Métodos para Despivotear en Excel
+1. Usar Pegado Especial con Transponer
+   Selecciona la tabla o rango de celdas que quieres "despivotear".
+
+Copia la selección (Ctrl + C).
+
+Selecciona la celda donde quieres que empiece la tabla transpuesta.
+
+Haz clic derecho y selecciona Pegado especial.
+
+Marca la opción Transponer.
+
+Haz clic en OK.
+
+Esto intercambiará filas por columnas.
+
+2. Usar la función TRANSPONER
+   Identifica el rango original de tu tabla (ej.: A1:C4).
+
+Selecciona un rango vacío con las dimensiones invertidas (tantas filas como columnas y viceversa).
+
+En la barra de fórmulas, escribe:
+
+text
+=TRANSPONER(A1:C4)
+Presiona Ctrl + Shift + Enter (en versiones antiguas con fórmula matricial) o solamente Enter en versiones modernas de Excel.
+
+Esto crea una tabla dinámica que refleja la transposición en tiempo real.
+
+3. Convertir Tabla a Rango antes de Transponer
+   Si tienes una tabla Excel (creada con Insertar > Tabla), el pegado especial no funcionará directamente.
+
+Conviértela a rango normal:
+
+Haz clic en alguna celda de la tabla.
+
+Ve a la pestaña Diseño de tabla y selecciona Convertir a rango.
+
+Luego procede a copiar y pegar con la opción Transponer.
+
+4. Usar Power Query para Despivotear (Deshacer Pivot)
+   Abre Power Query desde:
+   Datos > Obtener y transformar > Desde tabla/rango.
+
+Carga tu tabla en Power Query.
+
+Selecciona las columnas que quieras deshacer pivote.
+
+Usa la opción Despivotar columnas para convertirlas en filas.
+
+Carga el resultado de nuevo a Excel como tabla.
+
+Esta opción es ideal para tablas complejas o pivoteadas.
+
+Notas
+Despivotear es diferente a simplemente "transponer" cuando hablamos de tablas dinámicas o datos agrupados. Power Query te ayuda a "despivotar" columnas etiquetadas y hacer análisis más avanzados.
+
+Asegúrate de validar los datos después de transponer para evitar errores de referencias.
+
+Recursos y Documentación Adicional
+Microsoft Support - Transponer datos en Excel
+
+Power Query para principiantes
+
+Si necesitas ayuda con ejemplos prácticos o automatizar estos procesos, ¡contáctame!
+
+¿Quieres que te prepare un tutorial completo con capturas de pantalla o un archivo .xlsx de ejemplo?
